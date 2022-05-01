@@ -6,7 +6,9 @@
     "example": "examples"
   },
   "scripts": {
+    "build": "npm run browserify && npm run minify",
     "browserify": "browserify zipkin.js -o zipkin-bundle.js",
+    "minify": "minify zipkin-bundle.js > zipkin-bundle.min.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -25,6 +27,7 @@
   "homepage": "https://github.com/jonatan-ivanov/zipkin-instrumentation-fetch-browser#readme",
   "dependencies": {
     "browser-process-hrtime": "^1.0.0",
+    "minify": "^8.0.4",
     "zipkin-instrumentation-fetch": "^0.22.0",
     "zipkin-transport-http": "^0.22.0"
   },
