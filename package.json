@@ -1,0 +1,34 @@
+{
+  "name": "zipkin-instrumentation-fetch-browser",
+  "version": "0.22.0",
+  "description": "Browserified version of zipkin-instrumentation-fetch",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "browserify": "browserify zipkin.js -o zipkin-bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonatan-ivanov/zipkin-instrumentation-fetch-browser.git"
+  },
+  "keywords": [
+    "zipkin",
+    "browserify"
+  ],
+  "author": "Jonatan Ivanov",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/jonatan-ivanov/zipkin-instrumentation-fetch-browser/issues"
+  },
+  "homepage": "https://github.com/jonatan-ivanov/zipkin-instrumentation-fetch-browser#readme",
+  "dependencies": {
+    "browser-process-hrtime": "^1.0.0",
+    "zipkin-instrumentation-fetch": "^0.22.0",
+    "zipkin-transport-http": "^0.22.0"
+  },
+  "devDependencies": {
+    "browserify": "^17.0.0"
+  }
+}
